@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -88,13 +89,13 @@
   display: none;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .header {
     width: unset;
   }
   .gameboard {
-    max-height: 40vh;
-    max-width: 40vh;
+    max-height: 50vh;
+    max-width: 50vh;
     position: unset;
   }
 
@@ -103,8 +104,18 @@
     top: unset;
     width: 300px;
     border: black 2px solid;
-    margin: 350px auto;
+    margin: 400px auto;
     font-size: 16px;
     left: calc(50% - 150px);
+  }
+}
+@media screen and (max-width: 390px) {
+  .gameboard {
+    max-height: 40vh;
+    max-width: 40vh;
+  }
+
+  .btn-start {
+    margin: 350px auto;
   }
 }
