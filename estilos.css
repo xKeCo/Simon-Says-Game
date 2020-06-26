@@ -13,6 +13,7 @@
   color: white;
   font-size: 24px;
   padding: 20px;
+  width: 100vw;
 }
 
 .gameboard {
@@ -85,4 +86,25 @@
 
 .hide {
   display: none;
+}
+
+@media (max-width: 480px) {
+  .header {
+    width: unset;
+  }
+  .gameboard {
+    max-height: 40vh;
+    max-width: 40vh;
+    position: unset;
+  }
+
+  .btn-start {
+    height: 50px;
+    top: unset;
+    width: 300px;
+    border: black 2px solid;
+    margin: 350px auto;
+    font-size: 16px;
+    left: calc(50% - 150px);
+  }
 }
